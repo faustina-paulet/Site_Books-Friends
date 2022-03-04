@@ -4,5 +4,36 @@
         <nume>Popescu</nume>
         <prenume>Ion</prenume>
         <varsta>23</varsta>
+        <adresa>Tudor_Vladimirescu</adresa>
+        <numar>12</numar>
+        <localitate>Iasi</localitate>
+        <judet>Iasi</judet>
+        <tara>Romania</tara>
+    </persoana>
+    <persoana id="2">
+        <nume>Andrici</nume>
+        <prenume>Monica</prenume>
+        <varsta>20</varsta>
+        <adresa>Ion_Creanga</adresa>
+        <numar>14</numar>
+        <localitate>Bacau</localitate>
+        <judet>Bacau</judet>
+        <tara>Romania</tara>
+        <facultate>AC</facultate>
+        <specializare>CTI</specializare>
+        <an_studiu>3</an_studiu>
+    </persoana>
+    <persoana id="3">
+        <nume>Mocanu</nume>
+        <prenume>Alina</prenume>
+        <varsta>19</varsta>
+        <adresa>Mircea</adresa>
+        <numar>222</numar>
+        <localitate>Constanta</localitate>
+        <judet>Constanta</judet>
+        <tara>Romania</tara>
+        <facultate>AC</facultate>
+        <specializare>IS</specializare>
+        <an_studiu>1</an_studiu>
     </persoana>
 </persoane>

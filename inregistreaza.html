@@ -1,24 +1,25 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Carti</title>
+<title>Books&Friends</title>
 </head>
 <body>
 
 <header>
-<h1><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCM5ozEXVq7p5yEt3LdpDj_e5vj-xarh7REvr6FoVPlAdixGwiSlF7yBs9uxodIkWCdHo&usqp=CAU" width=50" height="50">  Carti</h1></header>
+<h1><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCM5ozEXVq7p5yEt3LdpDj_e5vj-xarh7REvr6FoVPlAdixGwiSlF7yBs9uxodIkWCdHo&usqp=CAU" width=50" height="50">Books&Friends</h1></header>
 <nav>
     <a href=file:///C:\Users\faust\proiect-1-FaustinaCristina/acasa.html>Acasa</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     <a href=file:///C:\Users\faust\proiect-1-FaustinaCristina/inregistreaza.html>Înregistrează</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     <a href=file:///C:\Users\faust\proiect-1-FaustinaCristina/video.html>Video</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <a href=file:///C:\Users\faust\proiect-1-FaustinaCristina/despre.html>Despre</a>
+    <a href=file:///C:\Users\faust\proiect-1-FaustinaCristina/despre_html.html>Despre</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href=file:///C:\Users\faust\proiect-1-FaustinaCristina/desen.html>Desen</a>
 </nav>
 
 <article>
-
-  <br>Creaza cont </br>
-  <br>Informații generale</br><br></br>
+  <br></br>
   <form>
+    <fieldset>
+    <h2>Informații generale</h2>
     <label>Nume utilizator:</label>
     <input type="text" value="nume utilizator"><br><br>
     <label>Parola:</label>
@@ -31,7 +32,12 @@
     <input type="email" value="email"><br><br>
     <label>Telefon:</label>
     <input type="tel"><br>
-    <br>Informații persoanale</br><br></br>
+    </fieldset><br></br>
+  </form>
+
+<form>
+  <fieldset>
+    <h2>Informații persoanale</h2>
     <label>Sexul:</label>
     <select>
         <option>Femeie</option>
@@ -57,13 +63,17 @@
     <input type="range"><br><br>
     <label>Adresa paginii personale:</label>
     <input type="url"><br><br>
-    <label>Descriere:</label>
-    <input type="textarea"><br><br>
-    <p><input type="submit" value="Inregistreaza"></p>
-  </form>
+    <label for="descriere">Descriere:</label>
+    <textarea id="descriere" cols="10" rows="2"></textarea><br>
+</fieldset><br></br>
 
-  </article>
-  <footer>© 2022 Cărți</footer>
-    
+<fieldset>
+    <button class="button button3" type="button" onclick="false;">Înregistrează</button>
+</fieldset>
+</form>
+
+</article>
+<footer>© 2022 Cărți</footer>
+   
 </body>
 </html>

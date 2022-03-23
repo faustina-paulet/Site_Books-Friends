@@ -36,7 +36,7 @@ p::first-letter {
 }
 
 a:hover {
-    background-color: #FFD919;
+    background-color: #f7f5ee;
     color: black;
 }
 
@@ -82,7 +82,14 @@ fieldset{
     padding: 20px;
     font-size: 15px;
     color: white;
+  
 }
+
+.video-container
+{ 
+    display: flex; 
+    justify-content: center;
+ }
 
 @media screen and (min-width: 480px) {
     body {

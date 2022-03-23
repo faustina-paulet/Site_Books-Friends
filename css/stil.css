@@ -6,19 +6,88 @@ nav {
     padding: 10px;
     display: flex;
     justify-content: center;
-    background-color: rgb(48, 46, 77);
-    
-    
+    background-color: rgb(48, 46, 77); 
 }
 
 nav a{
     font-size: 20px;
     color: white;
+    font-weight: bold;
+    font-size: 25px;
 }
-
-
 
 body{
     margin: 0px;
 }
 
+h1 {
+    color: rgb(12, 11, 11);
+    text-align: left;
+  }
+
+::marker {
+    color: rgb(17, 8, 95);
+    font-size: 20px;
+}
+
+p::first-letter {
+    color: #090124;
+    font-size: xx-large;
+}
+
+a:hover {
+    background-color: #FFD919;
+    color: black;
+}
+
+
+table,th,td {
+    border: 4px solid rgb(6, 5, 75);
+    border-collapse: collapse;
+    padding: 15px;
+    text-align: left;
+}
+
+input[type=text],
+input[type=password],
+input[type=email],
+input[type=tel],
+input[list="mancare"],
+input[type=color],
+input[type=date],
+input[type=time],
+input[type=url],
+select,
+textarea,
+datalist {
+   
+    padding: 5px;
+    border: 2px solid #2a0444;
+    background-color: white;
+    
+}
+
+fieldset{
+    color:#020f27;
+    font-size: 20px;
+    font-weight: bold;
+    
+}
+
+
+
+.flex-container {
+    background-color: #0f083b;
+    margin: 100px;
+    padding: 20px;
+    font-size: 15px;
+    color: white;
+}
+
+@media screen and (min-width: 480px) {
+    body {
+        background-color: rgb(160, 214, 196);
+        margin: auto;
+        
+    }
+}

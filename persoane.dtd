@@ -1,4 +1,3 @@
-
 <!ELEMENT persoane (persoana+)>
 <!ELEMENT persoana (nume,prenume,varsta,adresa,numar,localitate,judet,tara,facultate?,specializare?,an_studiu?)>
 <!ATTLIST persoana id CDATA #REQUIRED>

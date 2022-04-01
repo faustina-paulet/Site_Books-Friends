@@ -2,14 +2,15 @@
 <html>
 <head>
 <title>Books&Friends</title>
-<link rel="stylesheet" type="text/css" href="css/stil.css"/>
+<link rel="stylesheet" type="text/css" href="continut/css/stil.css"/>
+<script src="continut/js/script.js"></script>
 </head>
 <body>
 
 <header>
-<h1><img src="imagini/logo.png" width="50" height="50">Books&Friends</h1></header>
+<h1><img src="continut/imagini/logo.png" width="50" height="50">Books&Friends</h1></header>
 <nav>
-    <a href=file:///C:\Users\faust\proiect-1-FaustinaCristina/acasa.html>Acasa</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href=file:///C:\Users\faust\proiect-1-FaustinaCristina/index.html>Acasa</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     <a href=file:///C:\Users\faust\proiect-1-FaustinaCristina/inregistreaza.html>Înregistrează</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     <a href=file:///C:\Users\faust\proiect-1-FaustinaCristina/video.html>Video</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     <a href=file:///C:\Users\faust\proiect-1-FaustinaCristina/despre.html>Despre</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -17,14 +18,67 @@
     <a href=file:///C:\Users\faust\proiect-1-FaustinaCristina/invat.html>Învăț</a>
 </nav>
 
-<h2>Despre noi</h2>
-<p><a href="https://www.w3.org/">Secțiune 1</a></p>
-<p><a href="https://www.google.com/">Secțiune 2</a></p>
-<p><a href="https://www.google.com/">Secțiune 3</a></p>
+<div onload="incarcare(),setInterval(data,1000)"></div>
 
-<script>
-    document.getElementById("demo").innerHTML = "Hello JavaScript!";
-</script>
+<div>
+    <aside>
+        <div">
+            <h2><a href="sectiunea1"><b>Secțiunea 1</b></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="sectiunea2"><b>Secțiunea 2</b></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="sectiunea3"><b>Secțiunea 3</b></a></h2>
+        </div>
+    </aside>
+</div>
+
+<div>
+    <section style="border-style: solid;">
+        <h2>Secțiunea 1</h2>
+
+        <p><b>Data: </b></p>
+        <p id="data">
+            <button onclick="setInterval(data, 1000)">Afisare data</button>
+        </p>
+
+        <p><b>URL: </b></p>
+        <p id="url">
+            <button onclick="url()">URL</button>
+        </p>
+
+        <p><b>Locatie: </b></p>
+        <p id="locatie">
+            <button onclick="getLocation()">Locație</button>
+        </p>
+
+        <p><b>Versiune: </b></p>
+        <p id="versiune">
+            <button onclick=" versiuneBrowser()">Versiune</button>
+        </p>
+
+        <p><b>Sistem de operare: </b></p>
+        <p id="sistem">
+            <button onclick="SistemOperare()">Sistem de operare</button>
+        </p>
+    </section><br><br><br>
+
+
+    <div>
+
+    <section style="border-style: solid;">
+        <h2>Secțiunea 2</h2>
+        <canvas onclick="desenare(event);" id="myCanvas" height="300" width="500" style="border:1px solid #000000;"></canvas>
+        <br>
+
+        <label for="contur">Alegeți culoarea pentru contur</label>
+        <input type="color" id="contur" name="contur" value="#e66465"><br><br>
+
+
+        <label for="umplere">Alegeți culoarea de umplere</label>
+        <input type="color" id="umplere" name="umplere" value="#f6b73c"><br>
+
+    </section><br><br><br>
+
+
+
 
 <footer>© 2022 Cărți</footer>
     

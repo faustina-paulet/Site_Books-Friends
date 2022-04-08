@@ -24,8 +24,9 @@ body{
 
 h1 {
     color: rgb(12, 11, 11);
-    text-align: left;
+    text-align: center;
   }
+
 
 ::marker {
     color: rgb(17, 8, 95);

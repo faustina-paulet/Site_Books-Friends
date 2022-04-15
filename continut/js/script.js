@@ -39,7 +39,22 @@ function incarcare() {
 
 function schimbaContinut()
 {
-    
+    if (jsFisier) {
+        var elementScript = document.createElement('script');
+        elementScript.onload = function () {
+            console.log("hello");
+            if (jsFunctie) {
+                window[jsFunctie]();
+            }
+        };
+        elementScript.src = jsFisier;
+        document.head.appendChild(elementScript);
+    } else {
+        if (jsFunctie) {
+            window[jsFunctie]();
+        }
+    }
+   
 }
 
 

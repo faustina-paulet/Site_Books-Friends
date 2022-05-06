@@ -1,89 +1,96 @@
-<!DOCTYPE html>
-<html>
-<head>
-<title>Books&Friends</title>
-<link rel="stylesheet" type="text/css" href="css/stil.css"/>
-<script src="js/script.js"></script>
-</head>
-<body>
-
-<header>
-<h1><img src="imagini/logo.png" width="50" height="50">Books&Friends</h1></header>
-<nav>
-    <a href=file:///C:\Users\faust\proiect-1-FaustinaCristina\continut/index.html>Acasa</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <a href=file:///C:\Users\faust\proiect-1-FaustinaCristina\continut/inregistreaza.html>Înregistrează</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <a href=file:///C:\Users\faust\proiect-1-FaustinaCristina\continut/video.html>Video</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <a href=file:///C:\Users\faust\proiect-1-FaustinaCristina\continut/despre_html.html>Despre HTML</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <a href=file:///C:\Users\faust\proiect-1-FaustinaCristina\continut/desen.html>Desen</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <a href=file:///C:\Users\faust\proiect-1-FaustinaCristina\continut/invat_js.html>Învăț JS</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <a href=file:///C:\Users\faust\proiect-1-FaustinaCristina\continut/persoane.html>Persoane</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <a href=file:///C:\Users\faust\proiect-1-FaustinaCristina\continut/verifica.html>Verificare</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <a href=file:///C:\Users\faust\proiect-1-FaustinaCristina\continut/cumparaturi.html>Cumparaturi</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  </nav>
-
 <div onload="incarcare(),setInterval(data,1000)"></div>
 
 <div>
     <aside>
-        <div">
-            <h2><a href="sectiunea1"><b>Secțiunea 1</b></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="sectiunea2"><b>Secțiunea 2</b></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="sectiunea3"><b>Secțiunea 3</b></a></h2>
+        <div>
+            <img  alt="" align="left" src="imagini/123.webp"width="90" height="100" />
+            <a href="#s1"><h3>Secțiunea 1</h3></a>
+            <a href="#s2"><h3>Secțiunea 2</h3></a>
+            <a href="#s3"><h3>Secțiunea 3</h3></a>
         </div>
     </aside>
 </div>
 
 <div>
-    <section style="border-style: solid;">
+    <section style="border-style: solid;"id="s1">
         <h2>Secțiunea 1</h2>
 
         <p><b>Data: </b></p>
         <p id="data">
             <button onclick="setInterval(data, 1000)">Afisare data</button>
         </p>
-
+        <img  alt="" align="right" src="imagini/cifra_1.webp"width="250" height="250" />
         <p><b>URL: </b></p>
         <p id="url">
             <button onclick="url()">URL</button>
         </p>
-
         <p><b>Locatie: </b></p>
         <p id="locatie">
             <button onclick="getLocation()">Locație</button>
         </p>
-
         <p><b>Versiune: </b></p>
         <p id="versiune">
-            <button onclick=" versiuneBrowser()">Versiune</button>
+            <button onclick="versiuneBrowser()">Versiune</button>
         </p>
 
         <p><b>Sistem de operare: </b></p>
         <p id="sistem">
             <button onclick="SistemOperare()">Sistem de operare</button>
         </p>
+        
     </section><br><br><br>
 
 
     <div>
 
-    <section style="border-style: solid;">
+    <section style="border-style: solid;"id="s2">
         <h2>Secțiunea 2</h2>
-        <canvas onclick="desenare(event);" id="myCanvas" height="300" width="500" style="border:1px solid #000000;"></canvas>
+        <img  alt="" align="right" src="imagini/cifra_2.webp"width="250" height="250" />
+        <canvas onclick="desenare(event);" id="Canvas" height="300" width="500" style="border:1px solid #000000;"></canvas>
         <br>
 
-        <label for="contur">Alegeți culoarea pentru contur</label>
+        <label for="contur">Culoare contur</label>
         <input type="color" id="contur" name="contur" value="#e66465"><br><br>
+        
 
-
-        <label for="umplere">Alegeți culoarea de umplere</label>
+        <label for="umplere">Culoarea de umplere</label>
         <input type="color" id="umplere" name="umplere" value="#f6b73c"><br>
+        
 
     </section><br><br><br>
 
 
+    <div>
 
+        <section style="border-style: solid;"id="s3">
+            <h2>Secțiunea 3</h2>
+            <img  alt="" align="right" src="imagini/cifra_3.webp"width="250" height="250" />
+            <label for="poz">Poziție= </label>
+            <input type="text" id="poz" name="poz"><br><br>
+            <label for="culoare">Alegeți culoarea pentru coloană/rând</label>
+            <input type="color" id=" culoare" name="col" value="#e66465" onclick="schimbaCuloare_coloana()"><br><br>
 
-<footer>© 2022 Cărți</footer>
+            <table id="tabel">
+                <tr>
+                    <td>Rând1 Coloană1</td>
+                    <td>Rând1 Coloană2</td>
+                </tr>
+                <tr>
+                    <td>Rând2 Coloană1</td>
+                    <td>Rând2 Coloană2</td>
+                </tr>
+                <tr>
+                    <td>Rând3 Coloană1</td>
+                    <td>Rând3 Coloană2</td>
+                </tr>
+            </table><br><br>
+
+            <button onclick="inserareColoana()">Coloană nouă</button>
+            <button onclick=" inserareRand()">Rând nou</button>
     
-</body>
-</html>
+        </section><br><br><br>
+    </div>
+</div>
+
+
+

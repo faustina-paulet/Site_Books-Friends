@@ -3,31 +3,31 @@
 <head>
 <title>Books&Friends</title>
 <link rel="stylesheet" type="text/css" href="css/stil.css"/>
+<script src="js/script.js"></script>
+<script src="js/persoane.js"></script>
 </head>
+
 <body>
+  <header>
+    <h1><img src="imagini/logo.png" width="50" height="50">Books&Friends</h1> 
+  </header>
 
-<header>
-<h1><img src="imagini/logo.png" width="50" height="50">Books&Friends</h1></header>
-<nav>
-     <a href=file:///C:\Users\faust\proiect-1-FaustinaCristina\continut/index.html>Acasa</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-     <a href=file:///C:\Users\faust\proiect-1-FaustinaCristina\continut/inregistreaza.html>Înregistrează</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-     <a href=file:///C:\Users\faust\proiect-1-FaustinaCristina\continut/video.html>Video</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-     <a href=file:///C:\Users\faust\proiect-1-FaustinaCristina\continut/despre_html.html>Despre HTML</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-     <a href=file:///C:\Users\faust\proiect-1-FaustinaCristina\continut/desen.html>Desen</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-     <a href=file:///C:\Users\faust\proiect-1-FaustinaCristina\continut/invat_js.html>Învăț JS</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-     <a href=file:///C:\Users\faust\proiect-1-FaustinaCristina\continut/persoane.html>Persoane</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-     <a href=file:///C:\Users\faust\proiect-1-FaustinaCristina\continut/verifica.html>Verificare</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-     <a href=file:///C:\Users\faust\proiect-1-FaustinaCristina\continut/cumparaturi.html>Cumparaturi</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-   </nav>
+  <nav>
+    <h3>
+      <a onclick="schimbaContinut('acasa')">Acasă</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a onclick="schimbaContinut('inregistreaza')">Înregistrează</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a onclick="schimbaContinut('video')">Video</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a onclick="schimbaContinut('despre_html')">Despre HTML</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a onclick="schimbaContinut('desen')">Desen</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a onclick="schimbaContinut('invat_js')">Învăț JS</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a onclick="schimbaContinut('persoane', 'js/persoane.js', 'incarcaPersoane')">Persoane</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a onclick="schimbaContinut('Verifica')">Verificare</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a onclick="schimbaContinut('cumparaturi','js/cumparaturi.js')">Cumpărături</a>
+    </h3>
+  </nav>
 
-<article>
-<h1><img src="imagini/carti_pagina_principala.png"></h1>
-
-<h3>Dacă mereu ți-ai dorit să faci o schimbare la tine și nu ai știut de unde să începi, ai nimerit unde trebuia. 
-Noi suntem aici pentru tine și să își sugerăm ce cărți te-ar putea ajuta în dezvoltarea ta personală.</h3>
-<h1><img src="imagini/reading.gif" ></h1>
-</article>
-<footer>© 2022 Cărți</footer>
+  <main id="continut"></main>
+  <footer>© 2022 Cărți</footer>
     
 </body>
 </html>

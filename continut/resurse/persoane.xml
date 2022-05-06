@@ -21,8 +21,6 @@
         <judet>Bacau</judet>
         <tara>Romania</tara>
         <facultate>AC</facultate>
-        <specializare>CTI</specializare>
-        <an_studiu>3</an_studiu>
     </persoana>
     <persoana id="3">
         <nume>Mocanu</nume>
@@ -34,7 +32,5 @@
         <judet>Constanta</judet>
         <tara>Romania</tara>
         <facultate>AC</facultate>
-        <specializare>IS</specializare>
-        <an_studiu>1</an_studiu>
     </persoana>
 </persoane>

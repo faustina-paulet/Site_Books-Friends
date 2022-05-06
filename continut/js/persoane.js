@@ -19,12 +19,11 @@ function createTable(xml) {
         table += "<tr><td>" + x[i].getElementsByTagName("nume")[0].childNodes[0].nodeValue +
             "</td><td>" + x[i].getElementsByTagName("prenume")[0].childNodes[0].nodeValue +
             "</td><td>" + x[i].getElementsByTagName("varsta")[0].childNodes[0].nodeValue +
-            "</td><td>" + "str. " + x[i].getElementsByTagName("strada")[0].childNodes[0].nodeValue +
+            "</td><td>" + "str. " + x[i].getElementsByTagName("adresa")[0].childNodes[0].nodeValue +
             ", nr. " + x[i].getElementsByTagName("numar")[0].childNodes[0].nodeValue +
             ", loc. " + x[i].getElementsByTagName("localitate")[0].childNodes[0].nodeValue +
             ", jud. " + x[i].getElementsByTagName("judet")[0].childNodes[0].nodeValue +
             "," + x[i].getElementsByTagName("tara")[0].childNodes[0].nodeValue +
-            "</td><td>" + x[i].getElementsByTagName("email")[0].childNodes[0].nodeValue +
             "</td><td>" + x[i].getElementsByTagName("job")[0].childNodes[0].nodeValue +
             "</td></tr>";
     }

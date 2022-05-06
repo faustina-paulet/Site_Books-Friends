@@ -20,7 +20,7 @@
         <localitate>Bacau</localitate>
         <judet>Bacau</judet>
         <tara>Romania</tara>
-        <facultate>AC</facultate>
+        <job>Medic</job>
     </persoana>
     <persoana id="3">
         <nume>Mocanu</nume>
@@ -31,6 +31,6 @@
         <localitate>Constanta</localitate>
         <judet>Constanta</judet>
         <tara>Romania</tara>
-        <facultate>AC</facultate>
+        <job>Informatician</job>
     </persoana>
 </persoane>
